@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:background="@drawable/ainbackground1"
+    >
+
+    <TextView
+        android:id="@+id/Login"
+        android:layout_width="195dp"
+        android:layout_height="60dp"
+
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="152dp"
+        android:layout_weight="1"
+        android:background="#7b2132"
+        android:fontFamily="serif"
+        android:text="Login as:"
+        android:textAlignment="center"
+        android:textColor="#ffffff"
+        android:textSize="35dp"
+        android:textStyle="bold" />
+
+    <RadioButton
+        android:id="@+id/CustomerLogin"
+        android:layout_width="191dp"
+        android:layout_height="80dp"
+        android:layout_centerInParent="true"
+        android:onClick="onClickCustomer"
+        android:text="Customer"
+        android:textColor="#FFFFFF"
+        android:textSize="35dp"
+        android:textStyle="bold" />
+
+    <RadioButton
+        android:id="@+id/StaffLogin"
+        android:layout_width="191dp"
+        android:layout_height="80dp"
+        android:layout_centerHorizontal="true"
+        android:onClick="onClickStaff"
+        android:text="Staff"
+        android:layout_below="@+id/ManagerLogin"
+        android:textSize="35dp"
+        android:textColor="#FFFFFF"
+        android:textStyle="bold"/>
+
+    <RadioButton
+        android:id="@+id/ManagerLogin"
+        android:layout_width="191dp"
+        android:layout_height="80dp"
+        android:layout_centerHorizontal="true"
+        android:onClick="onClickManager"
+        android:layout_below="@+id/CustomerLogin"
+        android:text="Manager"
+        android:textSize="35dp"
+        android:textColor="#FFFFFF"
+        android:textStyle="bold"/>
+
+</RelativeLayout>

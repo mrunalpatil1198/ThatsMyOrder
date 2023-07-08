@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Bill">
+
+
+    <ListView
+        android:id="@+id/LV"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="100dp"
+        android:layout_marginBottom="70dp"
+        />
+
+    <TextView
+        android:id="@+id/Name"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:text="TextView"
+        android:textSize="20dp" />
+
+    <TextView
+        android:id="@+id/Num"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/Name"
+        android:text="TextView"
+        android:textSize="20dp" />
+
+    <Button
+        android:id="@+id/button10"
+        android:layout_width="match_parent"
+
+        android:layout_height="40dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:background="#006699"
+        android:onClick="sout"
+        android:text="Sign Out" />
+
+    <TextView
+        android:id="@+id/total"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="42dp"
+        android:text="Total Amount"
+        android:textColor="#00060a"
+        android:background="#d6d4a3"
+        android:layout_above="@id/button10"
+        android:textSize="30dp" />
+</RelativeLayout>

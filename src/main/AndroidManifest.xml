@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.raunak.samrestaurant">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/logosam"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".CustomerLoginPage" android:parentActivityName=".MainActivity" />
+        <activity android:name=".ManagerPage3" android:parentActivityName=".MainActivity"/>
+        <activity android:name=".ManagerReservationPage" android:parentActivityName=".ManagerPage3"/>
+        <activity android:name=".Orders" android:parentActivityName=".Staff_login" />
+        <activity android:name=".Staff_login" android:parentActivityName=".MainActivity"/>
+        <activity android:name=".Menu" android:parentActivityName=".CustomerLoginPage"/>
+        <activity android:name=".CartDemo" android:parentActivityName=".Menu"/>
+        <activity android:name=".Bill"></activity>
+    </application>
+
+</manifest>
